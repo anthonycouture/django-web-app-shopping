@@ -1,1 +1,1 @@
-from .utilisateur import *
+from .produit import *
