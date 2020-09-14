@@ -27,3 +27,5 @@ listecourse
 
 Si vous reprenez le projet à partir de cette correction supprimer le fichier db.sqlite3 si existant 
 et exécuter cette commande : `python manage.py migrate`
+
+Pour créer le super utilisateur voici la commande : `python manage.py createsuperuser`
