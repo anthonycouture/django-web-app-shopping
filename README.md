@@ -25,5 +25,7 @@ listecourse
 |   urls.py : Fichier contenant l'ensemble des urls de l'application
 ```
 
+Le nouveau fichier est **liste.py**
+
 Si vous reprenez le projet à partir de cette correction supprimer le fichier db.sqlite3 si existant 
 et exécuter cette commande : `python manage.py migrate`
