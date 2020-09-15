@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_ul}}
+        <input type="submit" value="Connexion"/>
+    </form>
+
+    <a href="{% url 'registration' %}">S'inscrire</a>
+</body>
+</html>
