@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajout Produit</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_ul}}
+        <input type="submit" value="Créer le produit"/>
+    </form>
+</body>
+</html>
