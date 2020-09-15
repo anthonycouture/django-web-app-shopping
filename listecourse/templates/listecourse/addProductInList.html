@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un produit dans une liste</title>
+</head>
+<body>
+    <p>{{ message }}</p>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_ul}}
+        <input type="submit" value="Ajouter le produit"/>
+    </form>
+</body>
+</html>

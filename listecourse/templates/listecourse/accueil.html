@@ -5,8 +5,23 @@
     <title>Accueil</title>
 </head>
 <body>
-    <h1>{{ message }}</h1>
+    <h1>Liste</h1>
+    {% if liste  %}
+        <table>
+            <tr>
+                <th>Nom</th>
+                <th>Quantite</th>
+            </tr>
+            {% for element in liste %}
+                <tr>
+                    <td>{{ element.produit.nomProduit }}</td>
+                    <td>{{ element.quantite }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
     <a href="{% url 'addProduct' %}">Créer un produit</a>
+    <a href="{% url 'addProductInList' %}">Ajouter un produit à la liste</a>
     <a href="{% url 'logout' %}">Déconnexion</a>
 </body>
 </html>
