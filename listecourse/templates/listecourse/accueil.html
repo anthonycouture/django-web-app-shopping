@@ -16,6 +16,9 @@
                 <tr>
                     <td>{{ element.produit.nomProduit }}</td>
                     <td>{{ element.quantite }}</td>
+                    <td><a href="{% url 'moreQuantite' element.produit.nomProduit %}" >+</a></td>
+                    <td><a href="{% url 'lessQuantite' element.produit.nomProduit %}" >-</a></td>
+                    <td><a href="{% url 'deleteProductList' element.produit.nomProduit %}" >Supprimer</a></td>
                 </tr>
             {% endfor %}
         </table>
