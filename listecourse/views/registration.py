@@ -28,7 +28,7 @@ def index(request):
     else:
         form = RegistrationForm()
 
-    return render(request, 'listecourse/login.html', {'form': form})
+    return render(request, 'listecourse/registration.html', {'form': form})
 
 
 class RegistrationForm(forms.Form):
