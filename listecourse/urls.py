@@ -1,5 +1,7 @@
+from django.conf.urls.static import static
 from django.urls import path
 
+from mysite import settings
 from .views import accueil, login, logout, registration, addProduct, addProductInList
 
 urlpatterns = [
@@ -13,3 +15,6 @@ urlpatterns = [
     path('moreQuantite/<str:nom_produit>', accueil.moreQuantite, name='moreQuantite'),
     path('lessQuantite/<str:nom_produit>', accueil.lessQuantite, name='lessQuantite'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

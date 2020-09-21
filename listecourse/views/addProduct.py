@@ -9,11 +9,9 @@ from listecourse.models import Produit
 @login_required
 def index(request):
     if request.method == 'POST':
-        form = addProductForm(request.POST)
+        form = addProductForm(request.POST, request.FILES)
         if form.is_valid():
-            name_product = request.POST['name_product']
-            produit = Produit(nomProduit=name_product)
-            produit.save()
+            form.save()
             return HttpResponseRedirect(reverse('accueil'))
     else:
         form = addProductForm()
@@ -21,5 +19,7 @@ def index(request):
     return render(request, 'listecourse/addProduct.html', {'form': form})
 
 
-class addProductForm(forms.Form):
-    name_product = forms.CharField(label='Nom du produit', max_length=50)
+class addProductForm(forms.ModelForm):
+    class Meta:
+        model = Produit
+        fields = ['nomProduit', 'illustration']
