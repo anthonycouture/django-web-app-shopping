@@ -4,7 +4,6 @@ from django.shortcuts import render
 from listecourse.models import Liste, Produit
 from django.urls import reverse
 
-
 @login_required
 def index(request):
     user = request.user
@@ -36,7 +35,7 @@ def lessQuantite(resquest, nom_produit):
     produit = Produit.objects.get(nomProduit=nom_produit)
     liste = Liste.objects.get(utilisateur=user, produit=produit)
     if liste.quantite == 1:
-        Liste.delete(liste)
+        liste.delete()
     else:
         liste.quantite = liste.quantite - 1
         liste.save()
