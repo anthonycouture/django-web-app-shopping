@@ -7,9 +7,7 @@ from django import forms
 
 def index(request):
     if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
         form = LoginForm(request.POST)
-        # check whether it's valid:
         if form.is_valid():
             username = request.POST['username']
             password = request.POST['password']
