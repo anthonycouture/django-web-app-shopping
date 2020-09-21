@@ -7,8 +7,6 @@ from django import forms
 from listecourse.models import Produit, Liste
 
 
-data = []
-
 @login_required
 def index(request):
     user = request.user
@@ -31,6 +29,6 @@ def index(request):
 
 
 class addProductInListForm(forms.Form):
-    def __init__(self,user,*args, **kwargs):
+    def __init__(self, user, *args, **kwargs):
         super(addProductInListForm, self).__init__(*args, **kwargs)
         self.fields['name_product'] = forms.ModelChoiceField(queryset=Produit.objects.exclude(liste__utilisateur=user))
