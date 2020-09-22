@@ -31,8 +31,10 @@ listecourse
 ```
 
 Fichier modifié : 
+- **accueil.html**
 - **login.html**
 - **registration.html**
+- **accueil.py**
 - **login.py**
 - **logout.py**
 - **registration.py**
