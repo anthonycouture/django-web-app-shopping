@@ -15,9 +15,16 @@ listecourse
 |---templates
 |   |   listecourse
 |   |   |   accueil.html : Html pour la vue accueil
+|   |   |   addProduct.html : Html pour la vue addProduct
+|   |   |   login.html : Html pour la vue login
+|   |   |   registration.html : Html pour la vue registration
 |
 |---views
 |   |   accueil.py : Vue de la page accueil
+|   |   addProduct.py : Vue de la page addProduct
+|   |   login.py : Vue de la page login
+|   |   logout.py : Méthode pour la déconnexion
+|   |   registration.py : Vue de la page d'inscription
 |
 |   admin.py : Fichier de configuration pour l'administration
 |   apps.py : Fichier de déclaration de l'application
@@ -25,7 +32,12 @@ listecourse
 |   urls.py : Fichier contenant l'ensemble des urls de l'application
 ```
 
-Fichier modifié : **admin.py**
+Fichier modifié : 
+- **accueil.html**
+- **addProduct.html**
+- **accueil.py**
+- **addProduct.py**
+- **urls.py**
 
 Si vous reprenez le projet à partir de cette correction supprimer le fichier db.sqlite3 si existant 
 et exécuter cette commande : `python manage.py migrate`
