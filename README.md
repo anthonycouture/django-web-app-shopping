@@ -7,6 +7,7 @@ listecourse
 |---migration
 |   |   0001_initial.py : Fichier de migration de la BDD V1
 |   |   002_liste.py : Fichier de migration de la BDD V2
+|   |   0003_produit_illustration.py : Fichier de migration de la BDD V3
 |
 |---models
 |   |   produit.py : Fichier qui correspond à la table produit
@@ -34,9 +35,12 @@ listecourse
 |   urls.py : Fichier contenant l'ensemble des urls de l'application
 ```
 
-Fichier modifié : 
-- **accueil.html**
+Fichier modifié :
+- **accueil.html** 
+- **addProduct.html** 
+- **liste.py**
 - **accueil.py**
+- **addProduct.py**
 - **urls.py**
 
 Si vous reprenez le projet à partir de cette correction supprimer le fichier db.sqlite3 si existant 
