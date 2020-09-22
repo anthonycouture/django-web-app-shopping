@@ -36,9 +36,7 @@ listecourse
 
 Fichier modifié : 
 - **accueil.html**
-- **addProductInList.html**
 - **accueil.py**
-- **addProductInList.py**
 - **urls.py**
 
 Si vous reprenez le projet à partir de cette correction supprimer le fichier db.sqlite3 si existant 
