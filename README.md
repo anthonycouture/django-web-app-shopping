@@ -16,12 +16,14 @@ listecourse
 |   |   listecourse
 |   |   |   accueil.html : Html pour la vue accueil
 |   |   |   addProduct.html : Html pour la vue addProduct
+|   |   |   addProductInList.html : Html pour la vue addProductInList
 |   |   |   login.html : Html pour la vue login
 |   |   |   registration.html : Html pour la vue registration
 |
 |---views
 |   |   accueil.py : Vue de la page accueil
 |   |   addProduct.py : Vue de la page addProduct
+|   |   addProductInList.py : Vue de la page addProductInList
 |   |   login.py : Vue de la page login
 |   |   logout.py : Méthode pour la déconnexion
 |   |   registration.py : Vue de la page d'inscription
@@ -34,9 +36,9 @@ listecourse
 
 Fichier modifié : 
 - **accueil.html**
-- **addProduct.html**
+- **addProductInList.html**
 - **accueil.py**
-- **addProduct.py**
+- **addProductInList.py**
 - **urls.py**
 
 Si vous reprenez le projet à partir de cette correction supprimer le fichier db.sqlite3 si existant 
